@@ -59,6 +59,8 @@ const Articles = {
 			article: omitSlug(article),
 		}),
 	create: (article) => requests.post(`/articles`, { article }),
+	like: (slug) => requests.post(`/articles/${slug}/favorite`),
+	dislike: (slug) => requests.del(`/articles/${slug}/favorite`),
 };
 
 const Auth = {
