@@ -25,12 +25,6 @@ export default (state = {}, action) => {
 				...state,
 				comments: state.comments.filter((comment) => comment.id !== commentId),
 			};
-		case "LIKE":
-		case "DISLIKE":
-			return {
-				...state,
-				article: action.payload.article,
-			};
 	}
 
 	return state;
