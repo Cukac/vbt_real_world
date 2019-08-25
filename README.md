@@ -6,4 +6,3 @@ npm install
 
 npm start
 
-likes are in process of implementing
